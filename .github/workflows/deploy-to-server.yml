@@ -17,6 +17,6 @@ jobs:
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.REMOTE_PORT }}
+        password: ${{ secrets.REMOTE_PASSWORD }}
         script: |
-          echo "${{ secrets.SHH_KEY }}"
           echo "Hello, World!"
