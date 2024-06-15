@@ -18,4 +18,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.REMOTE_PORT }}
         script: |
+          echo "${{ secrets.SHH_KEY }}"
           echo "Hello, World!"
