@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      #work on getting docker to work now
     - name: Execute remote ssh commands
       uses: appleboy/ssh-action@master
       with:
@@ -20,3 +21,4 @@ jobs:
         password: ${{ secrets.REMOTE_PASSWORD }}
         script: |
           echo "Hello, World!"
+          
