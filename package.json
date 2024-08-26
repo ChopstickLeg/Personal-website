@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "create-cloudflare": "^2.25.2",
     "gh-pages": "^6.1.1"
   }
 }
