@@ -4,6 +4,7 @@ import { Octokit } from "octokit";
 import "./main-page.css";
 import AboutMe from "./aboutme";
 import Header from "./header";
+import NavigationBar from "./navbar";
 
 function App() {
   // eslint-disable-next-line
@@ -23,8 +24,9 @@ function App() {
     <Router>
       <div className="container">
         <Header subtitle="Software Developer Hayden Carpenter's Website" />
+        <NavigationBar />
         <Switch>
-          <Route path="/">
+          <Route path="/about">
             <AboutMe />
           </Route>
         </Switch>

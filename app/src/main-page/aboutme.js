@@ -9,8 +9,8 @@ const AboutMe = () => {
         <div className="col-md-5 d-flex justify-content-end">
           <img src={headshot} className="headshot" alt="headshot" />
         </div>
-        <div className="col-md-5 d-flex justify-content-start">
-          <p className="text-center">This will be the about me section</p>
+        <div className="col-md-5 d-flex " style={{ paddingLeft: "2%" }}>
+          <p className="text-start">This will be the about me section</p>
         </div>
       </div>
     </div>
