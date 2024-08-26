@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './main-page.css';
+import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./main-page.css";
+import Header from "./header";
 
 function App() {
+  //variable to store list of projects, won't be cleared on rerender
+  //inside const brackets, place <list name>, <setter function name from end of useEffect>
+  const [] = useState([]);
+  useEffect(() => {
+    //logic for fetching GitHub Projects
+    //this will only run on initial pageload since brackets are empty
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <Header subtitle="Software Developer Hayden Carpenter's Website" />
+
+        <Switch>
+          <Route path="/"></Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
