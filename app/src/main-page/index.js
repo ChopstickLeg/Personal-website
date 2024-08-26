@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Octokit } from "octokit";
 import "./main-page.css";
+import AboutMe from "./aboutme";
 import Header from "./header";
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
       <div className="container">
         <Header subtitle="Software Developer Hayden Carpenter's Website" />
         <Switch>
-          <Route path="/"></Route>
+          <Route path="/">
+            <AboutMe />
+          </Route>
         </Switch>
       </div>
     </Router>

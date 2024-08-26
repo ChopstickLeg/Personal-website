@@ -1,9 +1,14 @@
 .logo {
-  height: 150px;
+  height: 100px;
 }
 
 .subtitle{
   font-style: italic;
   font-size: x-large;
   color: navy;
+}
+
+.headshot {
+  height: 400px;
+  width: 300px;
 }
