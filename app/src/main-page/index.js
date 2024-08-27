@@ -1,25 +1,18 @@
-import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Octokit } from "octokit";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import "./main-page.css";
 import AboutMe from "./aboutme";
 import Header from "./header";
 import NavigationBar from "./navbar";
+import useRepos from "../hooks/useRepos";
 
 function App() {
-  // eslint-disable-next-line
-  const [repos, setRepos] = useState([]);
-  useEffect(() => {
-    const getRepos = async () => {
-      const octokit = new Octokit({});
-      const gitRepos = await octokit.paginate("GET /users/{username}/repos", {
-        username: "ChopstickLeg",
-      });
-      setRepos(gitRepos);
-      console.log(gitRepos);
-    };
-    getRepos();
-  }, []);
+  //eslint-disable-next-line
+  const allRepos = useRepos();
   return (
     <Router>
       <div className="container">
@@ -28,6 +21,10 @@ function App() {
         <Switch>
           <Route path="/about">
             <AboutMe />
+          </Route>
+          <Route path="/home"></Route>
+          <Route path="/">
+            <Redirect to="/about" />
           </Route>
         </Switch>
       </div>
