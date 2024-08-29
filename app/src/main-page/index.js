@@ -9,6 +9,7 @@ import AboutMe from "./aboutme";
 import Header from "./header";
 import NavigationBar from "./navbar";
 import useRepos from "../hooks/useRepos";
+import Repos from "./projects";
 
 function App() {
   //eslint-disable-next-line
@@ -25,6 +26,9 @@ function App() {
           <Route path="/home"></Route>
           <Route path="/">
             <Redirect to="/about" />
+          </Route>
+          <Route path="/projects">
+            <Repos />
           </Route>
         </Switch>
       </div>
