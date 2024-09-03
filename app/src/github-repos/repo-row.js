@@ -3,7 +3,7 @@ const RepoRow = ({ repo }) => {
     <tr>
       <td>{repo.name}</td>
       <td>
-        <a target="_blank" href={repo.html_url}>
+        <a target="_blank" rel="noopener noreferrer" href={repo.html_url}>
           Link to repo
         </a>
       </td>
