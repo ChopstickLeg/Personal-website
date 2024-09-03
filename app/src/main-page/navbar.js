@@ -4,7 +4,8 @@ const NavigationBar = () => {
   return (
     <div>
       <Link to="/about">about</Link>
-      <Link to="/">home</Link>
+      <Link to="/home">home</Link>
+      <Link to="/projects">projects</Link>
     </div>
   );
 };
