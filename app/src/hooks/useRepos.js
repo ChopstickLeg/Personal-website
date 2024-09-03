@@ -10,7 +10,6 @@ const useRepos = () => {
         username: "ChopstickLeg",
       });
       setRepos(gitRepos);
-      console.log(gitRepos);
     };
     getRepos();
   }, []);

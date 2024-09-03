@@ -23,12 +23,12 @@ function App() {
           <Route path="/about">
             <AboutMe />
           </Route>
+          <Route path="/projects">
+            <Repos repositories={allRepos} />
+          </Route>
           <Route path="/home"></Route>
           <Route path="/">
             <Redirect to="/about" />
-          </Route>
-          <Route path="/projects">
-            <Repos />
           </Route>
         </Switch>
       </div>
