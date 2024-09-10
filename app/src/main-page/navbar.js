@@ -2,10 +2,10 @@ import { NavLink as Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <div>
-      <Link to="/about">about</Link>
-      <Link to="/home">home</Link>
-      <Link to="/projects">projects</Link>
+    <div className="col-md-12 text-center">
+      <Link to="/about">About me&emsp;</Link>
+
+      <Link to="/projects">My Projects</Link>
     </div>
   );
 };
