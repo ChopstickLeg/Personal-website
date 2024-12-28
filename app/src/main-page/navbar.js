@@ -2,16 +2,15 @@ import { NavLink as Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <div className="col-md-12 text-center">
-      <div className="d-flex justify-content-center align-items-center">
-        <div>
-          <Link to="/about">About me</Link>
-        </div>
-        <div>
-          <Link to="/projects">My Projects</Link>
-        </div>
+    <nav className="navbar">
+      <div className="navbar-brand">
+        <Link to="/">Home</Link>
       </div>
-    </div>
+      <div className="navbar-menu">
+        <Link to="/about">About me</Link>
+        <Link to="/projects">My Projects</Link>
+      </div>
+    </nav>
   );
 };
 
