@@ -20,14 +20,11 @@ function App() {
         <Header subtitle="Software Developer Hayden Carpenter's Website" />
         <NavigationBar />
         <Switch>
-          <Route path="/about">
-            <AboutMe />
-          </Route>
           <Route path="/projects">
             <Repos repositories={allRepos} />
           </Route>
           <Route path="/">
-            <Redirect to="/about" />
+            <AboutMe />
           </Route>
         </Switch>
       </div>
