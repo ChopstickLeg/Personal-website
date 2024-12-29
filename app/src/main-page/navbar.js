@@ -7,7 +7,6 @@ const NavigationBar = () => {
         <Link to="/">Home</Link>
       </div>
       <div className="navbar-menu">
-        <Link to="/about">About me</Link>
         <Link to="/projects">My Projects</Link>
       </div>
     </nav>

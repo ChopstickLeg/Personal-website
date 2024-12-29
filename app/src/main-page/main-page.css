@@ -45,6 +45,28 @@
   text-align: center;
 }
 
+.contactTitle {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.skillsTitle {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.skillsTitle ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skillsTitle li {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
 .githubRepos {
   margin-top: 40px;
   padding: 20px;
