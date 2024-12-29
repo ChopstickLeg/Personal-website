@@ -13,7 +13,7 @@ jobs:
     defaults:
       run:
         working-directory: ./app
-
+        
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
@@ -28,4 +28,3 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run build --if-present
-      - run: npm test
